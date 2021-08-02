@@ -1,0 +1,83 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.palladiosimulator</groupId>
+    <artifactId>eclipse-parent-updatesite-notp</artifactId>
+    <version>0.7.3</version>
+  </parent>
+  <groupId>org.palladiosimulator.somox.updatesite</groupId>
+  <artifactId>org.palladiosimulator.somox.updatesite.aggregated</artifactId>
+  <version>5.0.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>Update Site Aggregated</name>
+
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-clean-plugin</artifactId>
+        <version>3.1.0</version>
+        <configuration>
+          <filesets>
+            <fileset>
+              <directory>target</directory>
+            </fileset>
+            <fileset>
+              <directory>updatesite-aggr</directory>
+              <includes>
+                <include>release.aggr</include>
+              </includes>
+            </fileset>
+          </filesets>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-resources-plugin</artifactId>
+        <version>3.2.0</version>
+        <executions>
+          <execution>
+            <phase>process-resources</phase>
+            <goals>
+              <goal>resources</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
+  <profiles>
+    <profile>
+      <id>release</id>
+      <activation>
+        <property>
+          <name>release</name>
+        </property>
+      </activation>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-antrun-plugin</artifactId>
+            <version>3.0.0</version>
+            <executions>
+              <execution>
+                <phase>generate-resources</phase>
+                <configuration>
+                  <target name="replace">
+                    <copy file="updatesite-aggr/nightly.aggr" toFile="updatesite-aggr/release.aggr" />
+                    <replaceregexp file="updatesite-aggr/release.aggr" match="https://updatesite.palladio-simulator.com/(.*)/nightly" replace="https://updatesite.palladio-simulator.com/\1/releases/latest" byline="true" />
+                  </target>
+                </configuration>
+                <goals>
+                  <goal>run</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
+</project>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aggregator:Aggregation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:aggregator="http://www.eclipse.org/cbi/p2repo/2011/aggregator/1.1.0" buildmaster="//@contacts[email='yves.kirschner@kit.edu']" label="Palladio Bench Reverse Engineering P2 Repositoy" buildRoot="./p2" packedStrategy="UNPACK">
+  <validationSets label="Palladio Bench Reverse Engineering 2020-12">
+    <contributions label="Palladio Bench">
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-build-updatesite/nightly/" />
+    </contributions>
+    <contributions label="Reverse Engineering - Discover">
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-reverseengineering-docker/nightly/" />
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-reverseengineering-java/nightly/" />
+    </contributions>
+    <contributions label="Reverse Engineering - Understand">
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-reverseengineering-somox/nightly/" />
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-reverseengineering-somox-ruleengine/nightly/" />
+    </contributions>
+    <contributions label="Reverse Engineering - Transform">
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-addons-fluentapimodelgenerator/nightly/" />
+    </contributions>
+    <validationRepositories location="http://download.eclipse.org/eclipse/updates/4.18" />
+    <validationRepositories location="http://download.eclipse.org/releases/2020-12" />
+  </validationSets>
+  <configurations architecture="x86_64" />
+  <configurations operatingSystem="macosx" windowSystem="cocoa" architecture="x86_64" />
+  <configurations operatingSystem="linux" windowSystem="gtk" architecture="x86_64" />
+  <contacts name="Yves R. Kirschner" email="yves.kirschner@kit.edu" />
+</aggregator:Aggregation>
