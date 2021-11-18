@@ -4,7 +4,7 @@
   <parent>
     <groupId>org.palladiosimulator</groupId>
     <artifactId>eclipse-parent-updatesite-notp</artifactId>
-    <version>0.7.3</version>
+    <version>0.7.4</version>
   </parent>
   <groupId>org.palladiosimulator.somox.updatesite</groupId>
   <artifactId>org.palladiosimulator.somox.updatesite.aggregated</artifactId>
