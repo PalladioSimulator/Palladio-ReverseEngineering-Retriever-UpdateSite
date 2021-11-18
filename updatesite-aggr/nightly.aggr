@@ -29,7 +29,7 @@
     </contributions>
     <contributions label="Reverse Engineering - Transform">
       <repositories location="https://updatesite.palladio-simulator.com/palladio-addons-fluentapimodelgenerator/nightly/">
-        <features name="org.palladiosimulator.generator.fluent_api.feature.feature.group" />
+        <features name="org.palladiosimulator.generator.fluent.feature.feature.group" />
       </repositories>
     </contributions>
     <validationRepositories location="http://download.eclipse.org/eclipse/updates/4.18" />
