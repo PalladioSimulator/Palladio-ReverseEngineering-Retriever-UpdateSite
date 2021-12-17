@@ -44,8 +44,8 @@
         <features name="org.palladiosimulator.generator.fluent.feature.feature.group"/>
       </repositories>
     </contributions>
-    <validationRepositories location="http://download.eclipse.org/eclipse/updates/4.21"/>
-    <validationRepositories location="http://download.eclipse.org/releases/2021-09"/>
+    <validationRepositories location="http://download.eclipse.org/eclipse/updates/4.22"/>
+    <validationRepositories location="http://download.eclipse.org/releases/2021-12"/>
   </validationSets>
   <configurations architecture="x86_64"/>
   <configurations operatingSystem="macosx" windowSystem="cocoa" architecture="x86_64"/>
