@@ -1,4 +1,6 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
@@ -10,7 +12,7 @@
   <artifactId>org.palladiosimulator.somox.updatesite.aggregated</artifactId>
   <version>5.1.0-SNAPSHOT</version>
   <packaging>pom</packaging>
-  <name>Update Site Aggregated</name>
+  <name>Aggregated SoMoX Update Site</name>
 
   <build>
     <plugins>
@@ -67,7 +69,10 @@
                 <configuration>
                   <target name="replace">
                     <copy file="updatesite-aggr/nightly.aggr" toFile="updatesite-aggr/release.aggr" />
-                    <replaceregexp file="updatesite-aggr/release.aggr" match="https://updatesite.palladio-simulator.com/(.*)/nightly" replace="https://updatesite.palladio-simulator.com/\1/releases/latest" byline="true" />
+                    <replaceregexp file="updatesite-aggr/release.aggr"
+                      match="https://updatesite.palladio-simulator.com/(.*)/nightly"
+                      replace="https://updatesite.palladio-simulator.com/\1/releases/latest"
+                      byline="true" />
                   </target>
                 </configuration>
                 <goals>
