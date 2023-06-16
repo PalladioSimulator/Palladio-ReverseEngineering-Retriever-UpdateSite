@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aggregator:Aggregation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:aggregator="http://www.eclipse.org/cbi/p2repo/2011/aggregator/1.1.0" description="Palladio Bench Reverse Engineering P2 Repositoy" buildmaster="//@contacts[email='yves.kirschner@kit.edu']" buildmasterBackup="//@contacts[email='palladio-build@ira.uka.de']" label="Palladio Bench Reverse Engineering P2 Repositoy" buildRoot="./p2" packedStrategy="UNPACK" type="N">
   <validationSets label="Palladio Bench Reverse Engineering">
-    <contributions label="Palladio Bench" contacts="//@contacts[email='palladio-build@ira.uka.de']">
+    <contributions label="Palladio - Bench" contacts="//@contacts[email='palladio-build@ira.uka.de']">
       <repositories location="https://updatesite.palladio-simulator.com/palladio-build-updatesite/nightly/">
         <bundles name="org.palladiosimulator.commons.stoex"/>
         <bundles name="de.uka.ipd.sdq.workflow.mdsd"/>
@@ -9,12 +9,10 @@
         <bundles name="de.uka.ipd.sdq.workflow"/>
         <features name="de.uka.ipd.sdq.identifier.feature.feature.group"/>
         <features name="org.palladiosimulator.pcm.feature.feature.group"/>
-      </repositories>
-      <repositories location="https://updatesite.mdsd.tools/library-emfeditutils/nightly/">
         <features name="tools.mdsd.library.emfeditutils.feature.feature.group"/>
       </repositories>
     </contributions>
-    <contributions label="Palladio Analyzer" contacts="//@contacts[email='palladio-build@ira.uka.de']">
+    <contributions label="Palladio - Analyzer" contacts="//@contacts[email='palladio-build@ira.uka.de']">
       <repositories location="https://updatesite.palladio-simulator.com/fluidtrust/palladio-reverseengineering-docker-vulnerability/nightly/">
         <features name="org.palladiosimulator.pcm.confidentiality.reverseengineering.feature.feature.group"/>
       </repositories>
@@ -24,33 +22,44 @@
       </repositories>
     </contributions>
     <contributions label="Reverse Engineering - Discover" contacts="//@contacts[email='yves.kirschner@kit.edu']">
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-reverseengineering-docker/nightly/">
-        <features name="org.palladiosimulator.somox.docker.feature.feature.group"/>
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-thirdparty-library/nightly/">
+        <features name="com.github.jsqlparser.feature.feature.group"/>
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-reverseengineering-java/nightly/">
-        <features name="org.emftext.language.java.feature.feature.group"/>
+      <repositories location="https://download.eclipse.org/tools/orbit/downloads/2022-12/">
+        <bundles name="org.apache.commons.cli"/>
+        <bundles name="org.apache.commons.csv"/>
+        <bundles name="org.jdom2"/>
+        <bundles name="org.yaml.snakeyaml"/>
+        <bundles name="org.apache.commons.io"/>
+      </repositories>
+      <repositories location="https://download.eclipse.org/releases/2022-12/">
+        <bundles name="org.json"/>
+        <features name="org.eclipse.wildwebdeveloper.feature.feature.group"/>
       </repositories>
     </contributions>
     <contributions label="Reverse Engineering - Understand" contacts="//@contacts[email='yves.kirschner@kit.edu']">
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-reverseengineering-somox/nightly/">
-        <features name="org.palladiosimulator.somox.core.feature.feature.group"/>
-      </repositories>
       <repositories location="https://updatesite.palladio-simulator.com/palladio-reverseengineering-somox-ruleengine/nightly/">
         <features description="Rule Engine for Reverse Engineering" name="org.palladiosimulator.somox.analyzer.rules.feature.feature.group" categories="//@customCategories[identifier='org.palladiosimulator.somox']"/>
+      </repositories>
+      <repositories location="https://updatesite.mdsd.tools/library-modelcompositionrefinement/nightly/">
+        <features name="tools.mdsd.mocore.feature.feature.group"/>
       </repositories>
     </contributions>
     <contributions label="Reverse Engineering - Transform" contacts="//@contacts[email='yves.kirschner@kit.edu']">
       <repositories location="https://updatesite.palladio-simulator.com/palladio-addons-fluentapimodelgenerator/nightly/">
         <features name="org.palladiosimulator.generator.fluent.feature.feature.group"/>
       </repositories>
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-addons-plantuml/nightly/">
+        <features name="org.palladiosimulator.view.plantuml.generator.feature.feature.group"/>
+      </repositories>
     </contributions>
-    <validationRepositories location="http://download.eclipse.org/eclipse/updates/4.22"/>
-    <validationRepositories location="http://download.eclipse.org/releases/2021-12"/>
+    <validationRepositories location="https://download.eclipse.org/eclipse/updates/4.26"/>
+    <validationRepositories location="http://download.eclipse.org/releases/2022-12"/>
   </validationSets>
   <configurations architecture="x86_64"/>
   <configurations operatingSystem="macosx" windowSystem="cocoa" architecture="x86_64"/>
   <configurations operatingSystem="linux" windowSystem="gtk" architecture="x86_64"/>
-  <customCategories identifier="org.palladiosimulator.somox" label="Palladio Bench Reverse Engineering Features" description="Palladio Bench Reverse Engineering Features" features="//@validationSets[label='Palladio%20Bench%20Reverse%20Engineering']/@contributions[label='Reverse%20Engineering%20-%20Understand']/@repositories.1/@features.0"/>
+  <customCategories identifier="org.palladiosimulator.somox" label="Palladio Bench Reverse Engineering Features" description="Palladio Bench Reverse Engineering Features" features="//@validationSets[label='Palladio%20Bench%20Reverse%20Engineering']/@contributions[label='Reverse%20Engineering%20-%20Understand']/@repositories.0/@features.0"/>
   <contacts name="Yves R. Kirschner" email="yves.kirschner@kit.edu"/>
   <contacts name="Palladio Build Mailing List" email="palladio-build@ira.uka.de"/>
 </aggregator:Aggregation>
