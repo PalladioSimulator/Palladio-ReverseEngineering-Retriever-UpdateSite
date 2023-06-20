@@ -34,7 +34,6 @@
       </repositories>
       <repositories location="https://download.eclipse.org/releases/2022-12/">
         <bundles name="org.json"/>
-        <features name="org.eclipse.wildwebdeveloper.feature.feature.group"/>
       </repositories>
     </contributions>
     <contributions label="Reverse Engineering - Understand" contacts="//@contacts[email='yves.kirschner@kit.edu']">
