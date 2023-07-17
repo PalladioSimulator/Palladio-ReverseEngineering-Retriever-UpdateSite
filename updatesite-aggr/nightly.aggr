@@ -51,6 +51,10 @@
       <repositories location="https://updatesite.palladio-simulator.com/palladio-addons-plantuml/nightly/">
         <features name="org.palladiosimulator.view.plantuml.generator.feature.feature.group"/>
       </repositories>
+      </repositories>
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-reverseengineering-somox-seff/nightly/">
+        <features name="org.palladiosimulator.somox.ast2seff.feature.feature.group"/>
+      </repositories>
     </contributions>
     <validationRepositories location="https://download.eclipse.org/eclipse/updates/4.26"/>
     <validationRepositories location="http://download.eclipse.org/releases/2022-12"/>
