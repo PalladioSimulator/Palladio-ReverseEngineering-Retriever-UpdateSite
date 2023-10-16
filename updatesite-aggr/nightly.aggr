@@ -41,7 +41,7 @@
                 location="https://updatesite.palladio-simulator.com/palladio-thirdparty-library/nightly/">
                 <features name="com.github.jsqlparser.feature.feature.group" />
             </repositories>
-            <repositories location="https://download.eclipse.org/tools/orbit/downloads/2022-12/">
+            <repositories location="https://download.eclipse.org/tools/orbit/downloads/2023-06/">
                 <bundles name="org.apache.commons.cli" />
                 <bundles name="org.apache.commons.csv" />
                 <bundles name="org.jdom2" />
