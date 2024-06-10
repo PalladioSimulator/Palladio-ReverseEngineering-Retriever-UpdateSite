@@ -17,6 +17,11 @@
         <features name="org.palladiosimulator.somox.ast2seff.feature.feature.group"/>
       </repositories>
     </contributions>
+    <contributions label="Reverse Engineering - Services" contacts="//@contacts[email='yves.kirschner@kit.edu']">
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-reverseengineering-retriever-services/nightly/">
+        <features name="org.palladiosimulator.retriever.services.feature.feature.group"/>
+      </repositories>
+    </contributions>
     <contributions label="Reverse Engineering - Discover" contacts="//@contacts[email='yves.kirschner@kit.edu']">
       <repositories location="https://updatesite.palladio-simulator.com/palladio-thirdparty-library/nightly/">
         <features name="com.github.jsqlparser.feature.feature.group"/>
@@ -47,6 +52,14 @@
       </repositories>
       <repositories location="https://updatesite.palladio-simulator.com/palladio-addons-plantuml/nightly/">
         <features name="org.palladiosimulator.view.plantuml.generator.feature.feature.group"/>
+      </repositories>
+    </contributions>
+    <contributions label="Reverse Engineering - Vulnerability" contacts="//@contacts[email='yves.kirschner@kit.edu']">
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-addons-vulnerability-metamodel/nightly/">
+        <features name="org.palladiosimulator.pcm.confidentiality.context.model.feature.feature.group"/>
+      </repositories>
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-reverseengineering-retriever-vulnerability/nightly/">
+        <features name="org.palladiosimulator.retriever.vulnerability.feature.feature.group"/>
       </repositories>
     </contributions>
     <validationRepositories location="https://download.eclipse.org/eclipse/updates/4.27"/>

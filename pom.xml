@@ -8,11 +8,12 @@
     <artifactId>eclipse-parent-updatesite-notp</artifactId>
     <version>0.8.9</version>
   </parent>
-  <groupId>org.palladiosimulator.somox.updatesite</groupId>
-  <artifactId>org.palladiosimulator.somox.updatesite.aggregated</artifactId>
-<version>5.2.0</version>
+
+  <groupId>org.palladiosimulator.retriever.updatesite</groupId>
+  <artifactId>org.palladiosimulator.retriever.updatesite.aggregated</artifactId>
+  <version>5.2.0</version>
   <packaging>pom</packaging>
-  <name>Aggregated SoMoX Update Site</name>
+  <name>Aggregated Retriever Update Site</name>
 
   <build>
     <plugins>
