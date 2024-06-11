@@ -21,6 +21,8 @@ jobs:
       actions: read
       contents: read
       security-events: write
+    env:
+      SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v4
@@ -32,9 +34,7 @@ jobs:
     - name: Run Maven
       run: mvn -B -U clean verify
     - name: Set up Snyk CLI
-      uses: snyk/actions/setup@806182742461562b67788a64410098c9d9b96adb
-      env:
-        SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+      uses: snyk/actions/setup@master
     - name: Snyk Code test
       run: snyk code test --sarif > snyk-code.sarif || true
     - name: Snyk Open Source monitor
@@ -42,6 +42,6 @@ jobs:
     - name: Snyk IaC test and report
       run: snyk iac test --report || true
     - name: Upload result to GitHub Code Scanning
-      uses: github/codeql-action/upload-sarif@v2
+      uses: github/codeql-action/upload-sarif@v3
       with:
         sarif_file: snyk-code.sarif
