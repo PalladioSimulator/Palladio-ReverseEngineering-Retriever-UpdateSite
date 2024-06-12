@@ -4,7 +4,7 @@ on: [push, pull_request, workflow_dispatch]
 
 jobs:
   Palladio-Build-UpdateSite:
-    uses: PalladioSimulator/Palladio-Build-ActionsPipeline/.github/workflows/build.yml@v3.4
+    uses: MDSD-Tools/Maven-Tycho-Action/.github/workflows/build.yml@main
     with:
       use-display-output: true
       no-caching: true
