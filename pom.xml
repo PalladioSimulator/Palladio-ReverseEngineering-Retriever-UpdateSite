@@ -11,7 +11,7 @@
 
   <groupId>org.palladiosimulator.retriever.updatesite</groupId>
   <artifactId>org.palladiosimulator.retriever.updatesite.aggregated</artifactId>
-  <version>5.2.0</version>
+  <version>5.2.1-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>Aggregated Retriever Update Site</name>
 
