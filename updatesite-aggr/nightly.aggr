@@ -27,14 +27,14 @@
         <features name="com.github.jsqlparser.feature.feature.group"/>
         <features name="org.openjdk.nashorn.feature.feature.group"/>
       </repositories>
-      <repositories location="https://download.eclipse.org/tools/orbit/downloads/2023-03/">
+      <repositories location="https://download.eclipse.org/tools/orbit/simrel/orbit-aggregation/release/4.29.0/">
         <bundles name="org.apache.commons.cli"/>
         <bundles name="org.apache.commons.csv"/>
         <bundles name="org.apache.commons.io"/>
         <bundles name="org.jdom2"/>
         <bundles name="org.yaml.snakeyaml"/>
       </repositories>
-      <repositories location="https://download.eclipse.org/releases/2023-03">
+      <repositories location="https://download.eclipse.org/releases/2023-09/">
         <bundles name="org.json"/>
       </repositories>
     </contributions>
@@ -62,8 +62,8 @@
         <features name="org.palladiosimulator.retriever.vulnerability.feature.feature.group"/>
       </repositories>
     </contributions>
-    <validationRepositories location="https://download.eclipse.org/eclipse/updates/4.27"/>
-    <validationRepositories location="https://download.eclipse.org/releases/2023-03"/>
+    <validationRepositories location="https://download.eclipse.org/eclipse/updates/4.29"/>
+    <validationRepositories location="https://download.eclipse.org/releases/2023-09/"/>
   </validationSets>
   <configurations architecture="x86_64"/>
   <configurations operatingSystem="macosx" windowSystem="cocoa" architecture="x86_64"/>
