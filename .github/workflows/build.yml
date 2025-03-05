@@ -3,12 +3,13 @@ name: Build Pipeline
 on: [push, pull_request, workflow_dispatch]
 
 jobs:
-  Palladio-Build-UpdateSite:
-    uses: MDSD-Tools/Maven-Tycho-Action/.github/workflows/build.yml@main
+  Palladio-ReverseEngineering-SoMoX-JaMoPP:
+    uses: PalladioSimulator/Palladio-Build-ActionsPipeline/.github/workflows/build.yml@master
     with:
       use-display-output: true
       no-caching: true
-      deploy-updatesite: "target/classes/p2/final"
+      runner-label: ubuntu-latest
+      deploy-updatesite: 'target/classes/p2/final'
     secrets:
       SERVER_SSH_KEY: ${{ secrets.DEPLOYMENT_SERVER_SSH_KEY }}
       REMOTE_HOST: ${{ secrets.DEPLOYMENT_REMOTE_HOST }}
