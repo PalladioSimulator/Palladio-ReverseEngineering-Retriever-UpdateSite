@@ -2,7 +2,7 @@
 <aggregator:Aggregation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:aggregator="http://www.eclipse.org/cbi/p2repo/2011/aggregator/1.1.0" description="Palladio Bench Reverse Engineering P2 Repositoy" buildmaster="//@contacts[email='yves.kirschner@kit.edu']" buildmasterBackup="//@contacts[email='palladio-build@ira.uka.de']" label="Palladio Bench Reverse Engineering P2 Repositoy" buildRoot="./p2" packedStrategy="UNPACK" type="N">
   <validationSets label="Palladio Bench Reverse Engineering">
     <contributions label="Palladio - Bench" contacts="//@contacts[email='palladio-build@ira.uka.de']">
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-build-updatesite/nightly/">
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-build-updatesite/releases/5.2.2/">
         <bundles name="de.uka.ipd.sdq.workflow.mdsd"/>
         <bundles name="de.uka.ipd.sdq.workflow"/>
         <bundles name="org.palladiosimulator.commons.stoex"/>
@@ -13,17 +13,17 @@
       </repositories>
     </contributions>
     <contributions label="Palladio - Analyzer" contacts="//@contacts[email='palladio-build@ira.uka.de']">
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-reverseengineering-somox-seff/nightly/">
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-reverseengineering-somox-seff/releases/5.2.2/">
         <features name="org.palladiosimulator.somox.ast2seff.feature.feature.group"/>
       </repositories>
     </contributions>
     <contributions label="Reverse Engineering - Services" contacts="//@contacts[email='yves.kirschner@kit.edu']">
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-reverseengineering-retriever-services/nightly/">
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-reverseengineering-retriever-services/releases/5.2.2/">
         <features name="org.palladiosimulator.retriever.services.feature.feature.group"/>
       </repositories>
     </contributions>
     <contributions label="Reverse Engineering - Discover" contacts="//@contacts[email='yves.kirschner@kit.edu']">
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-thirdparty-library/nightly/">
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-thirdparty-library/releases/5.2.2/">
         <features name="com.github.jsqlparser.feature.feature.group"/>
         <features name="org.openjdk.nashorn.feature.feature.group"/>
       </repositories>
@@ -39,7 +39,7 @@
       </repositories>
     </contributions>
     <contributions label="Reverse Engineering - Understand" contacts="//@contacts[email='yves.kirschner@kit.edu']">
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-reverseengineering-retriever/nightly/">
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-reverseengineering-retriever/releases/5.2.2/">
         <features description="Rule Engine for Reverse Engineering" name="org.palladiosimulator.retriever.feature.feature.group" categories="//@customCategories[identifier='org.palladiosimulator.somox']"/>
       </repositories>
       <repositories location="https://updatesite.mdsd.tools/library-modelcompositionrefinement/nightly/">
@@ -47,18 +47,18 @@
       </repositories>
     </contributions>
     <contributions label="Reverse Engineering - Transform" contacts="//@contacts[email='yves.kirschner@kit.edu']">
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-addons-fluentapimodelgenerator/nightly/">
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-addons-fluentapimodelgenerator/releases/5.2.2/">
         <features name="org.palladiosimulator.generator.fluent.feature.feature.group"/>
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-addons-plantuml/nightly/">
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-addons-plantuml/releases/5.2.2/">
         <features name="org.palladiosimulator.view.plantuml.generator.feature.feature.group"/>
       </repositories>
     </contributions>
     <contributions label="Reverse Engineering - Vulnerability" contacts="//@contacts[email='yves.kirschner@kit.edu']">
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-addons-vulnerability-metamodel/nightly/">
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-addons-vulnerability-metamodel/releases/5.2.2/">
         <features name="org.palladiosimulator.pcm.confidentiality.context.model.feature.feature.group"/>
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-reverseengineering-retriever-vulnerability/nightly/">
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-reverseengineering-retriever-vulnerability/releases/5.2.2/">
         <features name="org.palladiosimulator.retriever.vulnerability.feature.feature.group"/>
       </repositories>
     </contributions>
