@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>org.palladiosimulator</groupId>
 		<artifactId>eclipse-parent</artifactId>
-		<version>0.10.0</version>
+		<version>0.10.1</version>
 	</parent>
 	<groupId>org.palladiosimulator.retriever.updatesite</groupId>
 	<artifactId>org.palladiosimulator.retriever.updatesite.aggregated</artifactId>
@@ -187,7 +187,7 @@
 								<phase>generate-resources</phase>
 								<configuration>
 									<target name="replace">
-										<copy file="updatesite-aggr/nightly.aggr" toFile="updatesite-aggr/release.aggr"/>
+										<copy file="updatesite-aggr/nightly.aggr" toFile="updatesite-aggr/release.aggr" />
 										<replaceregexp file="updatesite-aggr/release.aggr" match="https://updatesite.palladio-simulator.com/(.*)/nightly" replace="https://updatesite.palladio-simulator.com/\1/releases/latest" byline="true" />
 									</target>
 								</configuration>
